@@ -19,74 +19,64 @@
  @import "materialize";
 
 
+/* body, flex keeps the footer at the bottom */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  div {
+    padding-bottom: 25px;
+  }
+
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1;
-  }
-  
-  h1 {
-    font-size: 3em;
-    letter-spacing: -2px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.2em;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: normal;
-    color: #777;
-  }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.7em;
-  }
-
-  #logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  line-height: 1;
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
 }
 
 /* footer */
 
 footer {
-    border-top: 1px solid #eaeaea;
-    color: #777;
-  }
   
-  footer a {
-    color: #555;
+  ul {
+  float: right;
+  list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+      }
+
   }
-  
-  footer a:hover {
-    color: #222;
-  }
-  
-  footer small {
-    float: left;
-  }
-  
-  footer ul {
-    float: right;
-    list-style: none;
-  }
-  
-  footer ul li {
-    float: left;
-    margin-left: 15px;
-  }
+
+}
