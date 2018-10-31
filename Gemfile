@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bcrypt',   '3.1.12'
+
 gem 'materialize-sass', '~> 1.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
